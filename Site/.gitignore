@@ -1,0 +1,12 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
+_data/releases.yml
+_data/milestones.yml
+_data/sidebar.yml
+
+_docs/**/*.markdown
+_docs/**/*.md
+_docs/**/*.html

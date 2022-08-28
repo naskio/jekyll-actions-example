@@ -1,0 +1,93 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+url: "https://naskio.github.io"
+baseurl: "/jekyll-actions-example"
+title: ILGPU - A Modern GPU Compiler for .Net Programs
+name: ILGPU
+email: ilgpucompiler@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A modern, lightweight & fast GPU compiler for high-performance .NET programs.
+social_links:
+  github: https://github.com/naskio/jekyll-actions-example
+  discord: https://discord.com/invite/X6RBCff
+gh_contribute: 'main'
+
+permalink: pretty # remove .html extension from permalinks
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:title/
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "doc"
+
+# Build settings
+remote_theme: MLH-Fellowship/jekyll-theme-arsha
+
+relative_links:
+  enabled: true
+  collections: true
+
+plugins: # installed in Gemfile
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-relative-links
+  - jekyll-sitemap
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - .gitignore
+
+dark_mode:
+  enabled: false # TODO: enable dark mode
+
+search:
+  enabled: true
