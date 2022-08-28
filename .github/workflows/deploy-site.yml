@@ -47,9 +47,9 @@ jobs:
           python --version
           echo "Generating _data/milestones.yml ..."
           python Site/scripts/generate_milestones.py
-          echo "Generating _data/releases.yml ...""
+          echo "Generating _data/releases.yml ..."
           python Site/scripts/generate_releases.py
-          echo "Generating _docs/ and _data/sidebar.yml ...""
+          echo "Generating _docs/ and _data/sidebar.yml ..."
           python Site/scripts/generate_docs.py
           echo "Generated successfully!"
         shell: bash
