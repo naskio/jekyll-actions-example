@@ -33,5 +33,5 @@ If enough people care I can record a short video of this process, but I expect t
 If you would like more info about GPGPU I would recommend the following resources.
 
 * [The Cuda docs](https://developer.nvidia.com/about-cuda) / [OpenCL docs](https://www.khronos.org/opencl/)
-* [An Introduction to CUDA Programming | Video 5 min](https://www.youtube.com/watch?v=kIyCq6awClM)
-* [Introduction to GPU Architecture and Programming Models | Video 2 hr 14 min](https://www.youtube.com/watch?v=uvVy3CqpVbM)
+* [An Introduction to CUDA Programming - 5min](https://www.youtube.com/watch?v=kIyCq6awClM)
+* [Introduction to GPU Architecture and Programming Models - 2h 14min](https://www.youtube.com/watch?v=uvVy3CqpVbM)
