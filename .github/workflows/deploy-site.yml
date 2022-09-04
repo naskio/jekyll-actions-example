@@ -8,7 +8,9 @@ name: Deploy Site with Jekyll, GitHub Pages
 on:
   workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
   push: # Runs on pushes targeting the default branch
-    branches: [ $default-branch ]
+    branches:
+      - main
+      - master
     paths:
       - 'Docs/**'
       - 'Site/**'
