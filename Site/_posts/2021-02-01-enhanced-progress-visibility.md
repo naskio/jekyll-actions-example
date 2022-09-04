@@ -1,5 +1,5 @@
 ---
-permalink: enhanced
+permalink: /enhanced
 ---
 
 Starting in February 2021, an updated ILGPU version will be available every 6-8 weeks. As the community grows, new
